@@ -56,12 +56,24 @@
       padding: 20px;
       border-radius: 10px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      height: 230px; /* ista visina za sve kartice */
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .project p{
-      height: 20px;
+      flex-grow: 1;
+      margin-top: 25px;
+      overflow: hidden;
     }
     .project h3 {
       margin-top: 0;
+    }
+    .tri p{
+	    margin-top:0px;
+    }
+    .project a.button {
+      align-self: flex-start;
     }
     .contact {
       background: #fff;
@@ -116,9 +128,9 @@
     <div class="project">
       <h3>Sajt za piceriju</h3>
       <p>Primer sajta za piceriju napravljen koristeći HTML/CSS, JavaScript i JQuery tehnologije sa responsive dizajnom.</p>
-      <a href="#" class="button">Pogledaj</a>
+      <a href="https://github.com/jovanovicp/Al-Pacino" class="button">Pogledaj</a>
     </div>
-    <div class="project">
+    <div class="project tri">
       <h3>Blog sajt za šefa kuhinje *U izdradi*</h3>
       <p>Wordpress sajt u formi bloga za privatnog klijenta. U toku izrade.</p>
       <a href="#" class="button">Pogledaj</a>
